@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.lab4.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_name"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/tv_name"
+        android:layout_alignStart="@+id/button3"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/e_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type your name"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/e_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type your age"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:layout_below="@+id/e_name"
+        android:layout_alignRight="@+id/e_name"
+        android:layout_alignEnd="@+id/e_name" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="save"
+        android:text="Save references"
+        android:textSize="30sp"
+        android:id="@+id/button3"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/e_age"
+        android:layout_alignLeft="@+id/e_age"
+        android:layout_alignStart="@+id/e_age" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignLeft="@+id/e_age"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignStart="@+id/e_age"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="99dp"
+        android:textSize="20sp" />
+</RelativeLayout>
